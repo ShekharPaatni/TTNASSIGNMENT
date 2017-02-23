@@ -24,5 +24,7 @@ if(month<10){
 var dat=" "
 dat=date+"/"+month+"/"+year;
 $("#wat").html("<br>"+dat+"<br><br>"+hour+" : "+mins+" : "+sec)},0);
+//Stop watch
+
 
 }()));

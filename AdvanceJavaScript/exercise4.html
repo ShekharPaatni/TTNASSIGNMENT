@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>Exercise 1</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+/*$(document).ready(function(){
+ $.ajax({
+  url:"https://maps.googleapis.com/maps/api/geocode/json?latlng=40.714224,-73.961452",
+  dataType:"json",
+  method:'GET',
+  success:(function(data){
+    console.log(data);
+  }),
+  error:(
+    function(){
+      console.log("error");
+    }
+  )
+  });
+});*/
+$(document).ready(function(){
+
+      $.get("https://maps.googleapis.com/maps/api/geocode/json?latlng=40.714224,-73.961452",
+
+        function(data,status){
+          for(var i=0;i<data.results.length;i++){
+          var table=document.getElementById("mytable");
+          var row=table.insertRow(0);
+          var cell1=row.insertCell(0);
+          cell1.innerHTML=data.results[i].formatted_address;
+        }
+        });
+
+
+});
+</script>
+</head>
+<body>
+<table id="mytable" border="2px solid black">
+
+</table>
+
+</body>
+</html>
