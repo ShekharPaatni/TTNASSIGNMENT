@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>twelveth </title>
+<style>
+button{
+float:right;
+}
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$("button").click(function(){
+
+$(this).parents('div').first().remove();
+});
+});
+
+</script>
+</head>
+<body>
+<div id="first">
+Hi I am the first data<button>Delete</button>
+</div>
+<div id="Second">
+<p>Hi I am the Second data<button value="Delete">Delete</button></p>
+</div>
+<div id="third">
+<p>Hi I am the third data<button value="Delete">Delete</button></p>
+</div>
+<div id="fourth">
+<p>Hi I am the fourth data<button value="Delete">Delete</button></p>
+</div>
+<div id="fifth">
+<p>Hi I am the fifth data<button value="Delete">Delete</button></p>
+</div>
+<div id="Sixth">
+<p>Hi I am the Sixth data<button value="Delete">Delete</button></p>
+</div>
+<div id="Seventh">
+<p>Hi I am the Seventh data<button value="Delete">Delete</button></p>
+</div>
+<div id="Eight">
+<p>Hi I am the Eight data<button value="Delete">Delete</button></p>
+</div>
+
+</body>
+
+</html>
+

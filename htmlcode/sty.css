@@ -1,0 +1,48 @@
+font:hover{
+background-color:#5A7CC2;
+}
+a{
+text-decoration: none;
+}
+.head{
+color:#00BFFF;font-size:18px;}
+.menu{
+color:#00BFFF;font-size:15px;}
+.startdiv{
+border:.5px solid #f1f1f1;background:aliceblue;height:30px; padding:15px;}
+.formheader{
+display:block;border:1px solid black; width:386px;height:30px;padding:20px;background:grey;text-align:left;}
+.formbody{
+display:inline-block; border:1px solid black; width:386px;text-align:left;padding:20px;}
+select{
+width:241px; background-color: #00BFFF; width:100%;}
+input[type='file']{
+opacity:0;
+z-index:3;
+position:absolute;
+width:100%;
+}
+.attach{
+width:100%;
+display:inline-block;
+
+}
+.attach .over{
+width:100%;
+height:100%;
+display:inline-block;
+position:absolute;
+}
+ .over span{
+width:100%;
+
+}
+.over span:first-child{
+border:2px solid black;
+width:70%;
+}
+.over span:last-child{
+
+border:2px solid black;
+width:50%;
+}
